@@ -1,7 +1,7 @@
 # Вариант 9 вычислить число сочетаний с помощью рекурсии
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+import math
 
 def rec(n, m):
      if n < 0 and m < 0:
@@ -18,3 +18,4 @@ if __name__ == '__main__':
   n = int(input("Введите целое число"))
   m = int(input("Введите целое число"))
   print(rec(n, m))
+  print("Проверка", math.factorial(n) / (math.factorial(m) * math.factorial(n - m)))
